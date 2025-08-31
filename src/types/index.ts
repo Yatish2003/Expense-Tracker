@@ -28,3 +28,24 @@ export interface ChartData {
   value: number;
   color?: string;
 }
+
+export interface Budget {
+  id: string;
+  categoryId: string;
+  categoryName: string;
+  monthlyLimit: number;
+  yearlyLimit: number;
+  period: 'monthly' | 'yearly';
+  alertThreshold: number; // percentage (e.g., 80 for 80%)
+  isActive: boolean;
+}
+
+export interface BudgetProgress {
+  categoryName: string;
+  budgetAmount: number;
+  spentAmount: number;
+  remainingAmount: number;
+  percentageUsed: number;
+  isOverBudget: boolean;
+  daysLeft: number;
+}

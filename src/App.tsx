@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import AddExpense from "./pages/AddExpense";
 import Expenses from "./pages/Expenses";
 import Analytics from "./pages/Analytics";
+import Budget from "./pages/Budget";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,10 +42,7 @@ const App = () => (
           } />
           <Route path="/budget" element={
             <DashboardLayout>
-              <div className="text-center py-12">
-                <h1 className="text-2xl font-bold mb-4">Budget Feature</h1>
-                <p className="text-muted-foreground">Coming soon...</p>
-              </div>
+              <Budget />
             </DashboardLayout>
           } />
           <Route path="*" element={<NotFound />} />
