@@ -47,22 +47,6 @@ const App = () => (
               </div>
             </DashboardLayout>
           } />
-          <Route path="/cards" element={
-            <DashboardLayout>
-              <div className="text-center py-12">
-                <h1 className="text-2xl font-bold mb-4">Cards Management</h1>
-                <p className="text-muted-foreground">Coming soon...</p>
-              </div>
-            </DashboardLayout>
-          } />
-          <Route path="/settings" element={
-            <DashboardLayout>
-              <div className="text-center py-12">
-                <h1 className="text-2xl font-bold mb-4">Settings</h1>
-                <p className="text-muted-foreground">Coming soon...</p>
-              </div>
-            </DashboardLayout>
-          } />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

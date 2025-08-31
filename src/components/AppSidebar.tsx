@@ -4,8 +4,6 @@ import {
   Receipt,
   TrendingUp,
   PieChart,
-  Settings,
-  CreditCard,
   Target,
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
@@ -29,8 +27,6 @@ const menuItems = [
   { title: "Expenses", url: "/expenses", icon: Receipt },
   { title: "Analytics", url: "/analytics", icon: PieChart },
   { title: "Budget", url: "/budget", icon: Target },
-  { title: "Cards", url: "/cards", icon: CreditCard },
-  { title: "Settings", url: "/settings", icon: Settings },
 ];
 
 export function AppSidebar() {
