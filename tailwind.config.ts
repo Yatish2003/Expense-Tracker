@@ -52,6 +52,22 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))'
+				},
+				expense: {
+					DEFAULT: 'hsl(var(--expense))',
+					foreground: 'hsl(var(--expense-foreground))'
+				},
+				income: {
+					DEFAULT: 'hsl(var(--income))',
+					foreground: 'hsl(var(--income-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +83,17 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-expense': 'var(--gradient-expense)',
+				'gradient-income': 'var(--gradient-income)'
+			},
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'expense': 'var(--shadow-expense)',
+				'income': 'var(--shadow-income)'
 			},
 			keyframes: {
 				'accordion-down': {
